@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Personal Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+    />
+    <style>
+      @media (max-width: 760px) {
+        html {
+          font-size: 55%;
+        }
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.4;
+        color: white;
+      }
+      #navbar {
+        display: flex;
+        justify-content: flex-end;
+        background: #be3844;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 40%);
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin-right: 2rem;
+      }
+      li {
+        display: list-item;
+        padding: 20px;
+      }
+      ul :hover {
+        background-color: #45567d;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #welcome-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+      }
+      h1 {
+        font-size: 4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        text-align: center;
+      }
+      p {
+        color: #be3144;
+      }
+      #projects {
+        text-align: center;
+        padding: 10rem 2rem;
+        background: #45567d;
+      }
+      h2 {
+        border-bottom: 0.2rem solid white;
+        width: 680px;
+        margin: 0 auto 6rem auto;
+      }
+      #projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 4rem;
+        margin-bottom: 20px;
+        max-width: 1280px;
+        width: 100%;
+      }
+      #projects-grid a {
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 50%);
+        border-radius: 2rem solid black;
+        text-decoration: none;
+      }
+      #projects-grid p {
+        display: block;
+        background: #303841;
+        color: white;
+        padding: 10px;
+      }
+      .code {
+        color: #303841;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+      #contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        background-color: #303841;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        width: 100%;
+        max-width: 980px;
+      }
+      .social-links a {
+        font-size: 1.4rem;
+        text-shadow: 2px 2px 1px #1f1f1f;
+        padding: 10px;
+      }
+      .social-links i {
+        margin: 5px;
+      }
+      footer {
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem;
+        align-items: center;
+        background: #303841;
+        border-top: 4px solid #be3144;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header links-->
+    <nav id="navbar">
+      <ul>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Welcome section-->
+    <section id="welcome-section">
+      <h1>Hey I am Imran khan</h1>
+      <p>a junior front end developer</p>
+    </section>
+
+    <!-- Welcome section ends here-->
+
+    <!--Portfolio section starts here-->
+    <section id="projects">
+      <h2>These are some of my projects</h2>
+      <div id="projects-grid">
+        <a href="https://codepen.io/freeCodeCamp/full/RKRbwL" target="_blank">
+          <img
+            src="product-landing.png"
+            alt="product product-landing website"
+          />
+          <p class="project-title">
+            <span class="code"><</span>
+            Product landing
+            <span class="code">/></span>
+          </p>
+        </a>
+        <a href="https://codepen.io/freeCodeCamp/full/RKRbwL" target="_blank">
+          <img src="edhi.png" alt="product product-landing website" />
+          <p class="project-title">
+            <span class="code"> < </span>
+            Tribute Website
+            <span class="code">/></span>
+          </p>
+        </a>
+        <a href="https://codepen.io/freeCodeCamp/full/RKRbwL" target="_blank">
+          <img src="form.png" alt="product product-landing website" />
+          <p class="project-title">
+            <span class="code"> < </span>
+            Survey form
+            <span class="code">/></span>
+          </p>
+        </a>
+        <a href="https://codepen.io/freeCodeCamp/full/RKRbwL" target="_blank">
+          <img src="documentaion.png" alt="product product-landing website" />
+          <p class="project-title">
+            <span class="code"> < </span>
+            Documentation
+            <span class="code">/></span>
+          </p>
+        </a>
+      </div>
+    </section>
+    <section id="contact-section">
+      <div class="header">
+        <h1>let's work together...</h1>
+      </div>
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com/imraankhan09/"
+          target="_blank"
+          class="btn contact-details"
+          id="profile-link"
+        >
+          <i class="fab fa-facebook-square"></i>Facebook</a
+        >
+        <a
+          href="https://github.com/emraan07"
+          target="_blank"
+          class="btn contact-details"
+          id="profile-link"
+        >
+          <i class="fab fa-github"></i>Github</a
+        >
+        <a
+          href="https://twitter.com/Imrankhan43913731"
+          target="_blank"
+          class="btn contact-details"
+          id="profile-link"
+        >
+          <i class="fab fa-twitter"></i>Twitter</a
+        >
+        <a
+          href="mailto:imkhang196@gmail.com"
+          target="_blank"
+          class="btn contact-details"
+          id="profile-link"
+        >
+          <i class="fas fa-at"></i>Send a mail</a
+        >
+      </div>
+    </section>
+    <footer>
+      <p>
+        Made by
+        <a href="https://www.facebook.com/imraankhan09" target="_blank"
+          >Imran khan</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
